@@ -8,6 +8,7 @@ import shutil
 class DosiRegisterEditor:
     def __init__(self, regedit_path: str | None) -> None:
         self.path = regedit_path
+        self.global_log = []
 
     def read(self, key_name):
         try:
